@@ -1,9 +1,9 @@
 #!/bin/bash/
 
 
-#Script     Ops Challenge: Class 02 - Append; Date and Time
+#Script         Ops Challenge: Class 02 - Append; Date and Time
 #Purpose        This script copies the /var/log/journal to the current working directory, appends the current date and time to the copied filename as well as echoing statements on what is happening along with a simple verification check.
-#Why           Learn how to create a bash script, practice how to write a simple script and learn how to use VC Code.
+#Why            Learn how to create a bash script, practice how to write a simple script and learn how to use VC Code.
 
 # Outputting to terminal that the script has started
 echo "Starting Script..."
