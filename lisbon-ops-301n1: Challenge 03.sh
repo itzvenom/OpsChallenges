@@ -5,6 +5,8 @@
 #Purpose        This script prompts users for input of directory and permissions, changes the permissions of the directory according to user input, prints directory contens and permissions settings and outputs a log file.
 #Why            Keep improving Bash writing skills and introduce Linux permissions to the knowledge base
 
+# Warning message
+echo "Changing permissions in system files/directories is not advised, as this can cause malfunctions in the OS. Please proceed with caution!"
 
 # Read user input and story it in a variable
 read -p "Which directory path would you like to change permissions? " directory
