@@ -36,7 +36,7 @@ while true; do
       exit 0
       ;;
     *) #Anything other than 1, 2, 3 or 4
-    echo ""
+      echo ""
       echo "Invalid option. Please choose a number between 1 and 4."
       echo ""
       sleep 3
