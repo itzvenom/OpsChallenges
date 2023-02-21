@@ -39,6 +39,7 @@ while true; do
     echo ""
       echo "Invalid option. Please choose a number between 1 and 4."
       echo ""
+      sleep 3
       ;;
   esac
 done
