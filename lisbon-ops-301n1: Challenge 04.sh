@@ -1,5 +1,11 @@
 #!/bin/bash
 
+
+ #Script         Ops Challenge: Class 04 - Conditionals in Menu Systems
+ #Purpose        This script prompts users to choose a number from a menu, then evaluates the input and runs commands based on it.
+ #Why            Introduce bash conditional statements
+
+
   # Creating while true loop so it always stays in the menu
 
 while true; do
