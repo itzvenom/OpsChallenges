@@ -12,7 +12,7 @@ fruits = ["Apple","Banana","Pear","Orange","Pineapple","Strawberry","Grapefruit"
 print(fruits[3])
 
 # Prints elements 5 to 9
-print(fruits[5:9])
+print(fruits[5:10])
 
 # Replace element number 6 for the string "Onion"
 fruits[6] = "Onion" 
