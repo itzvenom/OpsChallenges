@@ -8,10 +8,10 @@
 # Creating a list of fruits
 fruits = ["Apple","Banana","Pear","Orange","Pineapple","Strawberry","Grapefruit","Pomegranate","Blueberry","Grape"]
 
-# Prints the third element of the list
+# Prints the fourth element of the list
 print(fruits[3])
 
-# Prints elements 5 to 9
+# Prints elements 5th to 10th
 print(fruits[5:10])
 
 # Replace element number 6 for the string "Onion"
