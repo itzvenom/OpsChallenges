@@ -22,7 +22,7 @@ newnumbers()
 # Check if a is greater than b
 if a > b:
     print(f"{a} is greater than {b}")
-# Check if a is less than or equal to b
+# Check if a is less than b
 elif a < b:
     print(f"{a} is less than {b}")
 # If neither condition is met
@@ -44,10 +44,10 @@ elif a != b:
 
 # Assign fresh random values to a and b
 newnumbers()
-# Check if a greater or equal to b
+# Check if a is greater or equal to b
 if a >= b:
     print(f"{a} is greater or equal to {b}")
-# Check if less than or equal to b
+# Check if a is less than or equal to b
 elif a <= b:
     print(f"{a} is less than or equal to {b}")
 
