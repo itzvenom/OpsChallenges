@@ -2,7 +2,7 @@
 
 
 #Script         Ops Challenge: Class 09 - Python Conditional Statements
-#Purpose        Create a Python script that uses    conditional statements and logical conditionals.
+#Purpose        Create a Python script that uses conditional statements and logical conditionals.
 #Why            Learn how to make use conditional statements and logical conditionals.
 
 import random
