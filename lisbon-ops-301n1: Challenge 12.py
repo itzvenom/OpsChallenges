@@ -22,6 +22,12 @@ response = requests.request(method, url)
 # Translate error codes into their descriptions
 if response.status_code == 200:
     status = "OK"
+elif response.status_code == 301:
+    status = "Moved Permanently"
+elif response.status_code == 302:
+    status = "Found"
+elif response.status_code == 400:
+    status = "Bad Request"
 elif response.status_code == 400:
     status = "Bad Request"
 elif response.status_code == 401:
@@ -30,10 +36,17 @@ elif response.status_code == 403:
     status = "Forbidden"
 elif response.status_code == 404:
     status = "Not Found"
+elif response.status_code == 410:
+    status = "Gone"
+elif response.status_code == 418:
+    status = "I'm a teapot"
 elif response.status_code == 500:
     status = "Internal Server Error"
+elif response.status_code == 502:
+    status = "Bad Gateway"
 else:
     status = "Unknown Status Code"
+
 
 # Print response header information
 print(f"Response Status: {response.status_code} - {status}\n")
