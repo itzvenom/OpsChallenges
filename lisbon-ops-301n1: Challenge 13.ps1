@@ -7,7 +7,7 @@ New-ADUser -Name "Franz Ferdinand" `
     -Surname "Ferdinand" `
     -SamAccountName "FranzFerdinand" `
     -Path "CN=Users,DC=corp,DC=globexpower,DC=com" `
-    -AccountPassword (ConvertTo-SecureString "P@ssw0rd1" -AsPlainText -Force) ` `
+    -AccountPassword (ConvertTo-SecureString "P@ssw0rd1" -AsPlainText -Force) `
     -Title "TPS Reporting Lead" `
     -Department "TPS Department" `
     -Company "GlobeX USA" `
