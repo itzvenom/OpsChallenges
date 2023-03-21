@@ -12,7 +12,8 @@ New-ADUser -Name "Franz Ferdinand" `
     -Department "TPS Department" `
     -Company "GlobeX USA" `
     -EmailAddress "ferdi@globexpower.com" `
-    -City "Springfield, OR"
+    -City "Springfield, OR" `
+    -Enabled $true
 
 # Create new group
 New-ADGroup -Name "TPS Department" `
@@ -24,4 +25,3 @@ New-ADGroup -Name "TPS Department" `
 # Create new OU
 New-ADOrganizationalUnit -Name "GlobeX USA" `
     -Path "DC=corp,DC=globexpower,DC=com"
-
