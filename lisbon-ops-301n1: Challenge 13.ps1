@@ -16,12 +16,12 @@ New-ADUser -Name "Franz Ferdinand" `
 
 # Create new group
 New-ADGroup -Name "TPS Department" `
-    -Path "OU=GlobeX USA,DC=corp,DC=globexpower,DC=com" `
+    -Path "OU=GlobeX USA,CN=Users,DC=corp,DC=globexpower,DC=com" `
     -GroupScope Global `
     -GroupCategory Security `
     -Description "Group for TPS Department"
 
 # Create new OU
 New-ADOrganizationalUnit -Name "GlobeX USA" `
-    -Path "OU=Company,DC=corp,DC=globexpower,DC=com"
+    -Path "OU=Company,CN=Users,DC=corp,DC=globexpower,DC=com"
 
