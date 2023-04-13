@@ -7,6 +7,8 @@ $name = 'InactivityTimeoutSecs'
 
 $validInput = $false
 
+Write-Host "This script will log you out after completion. Please save all your work!"
+
 while (!$validInput) {
     $userTimeout = Read-Host "Enter the number of minutes before the screen locks out: "
     if ($userTimeout -as [uint16]) {
@@ -23,8 +25,16 @@ try {
     
      if ($property) {
         Set-ItemProperty -Path $path -Name $name -Value $screenTimeout 
+        Start-Sleep -Seconds 5
+        Write-Host "Screen Timeout Updated! You will be logged out in 5 seconds."
+        # Usually registry changes are applied right away, except if the process only reads the registry when starting. So just for good measure log out user.
+        shutdown.exe -l
      } else {
         New-ItemProperty -Path $path -Name $name -Value $screenTimeout -PropertyType DWord
+         Write-Host "Screen Timeout Updated! You will be logged out in 5 seconds."
+        Start-Sleep -Seconds 5
+        # Usually registry changes are applied right away, except if the process only reads the registry when starting. So just for good measure log out user.
+        shutdown.exe -l
      }
 } catch { 
      Write-Output $_.Exception.Message 
