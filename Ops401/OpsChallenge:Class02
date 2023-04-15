@@ -1,7 +1,7 @@
 #!/bin/python
 
 #Script         Ops Challenge: Class 02 - Uptime Sensor Tool Part 1 of 2
-#Purpose        Ask user for number of pings needed then proceed to ping 8.8.8.8 that many times while printing a timestamp and success or failure message to the console and writing it to a log file.
+#Purpose        Proceeds to ping 8.8.8.8 indefinetely while printing a timestamp and success or failure message to the console and writing it to a log file.
 #Why            Learn how to automate a script to check uptime of a certain endpoint.
 
 import os
@@ -10,10 +10,9 @@ import time
 destination_ip = "8.8.8.8"
 status = ""
 counter = 0
-numberofpings = int(input("Enter the number of pings to make: "))
 
 with open("ping_log.txt", "w") as file:
-    while counter < numberofpings:
+    while True:
         response = os.system(f"ping -c 1 {destination_ip} > /dev/null 2>&1")
         if response == 0:
             status = "success"
