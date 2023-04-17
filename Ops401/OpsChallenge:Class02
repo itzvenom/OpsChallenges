@@ -9,7 +9,6 @@ import time
 
 destination_ip = "8.8.8.8"
 status = ""
-counter = 0
 
 with open("ping_log.txt", "w") as file:
     while True:
