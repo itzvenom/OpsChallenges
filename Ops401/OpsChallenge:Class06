@@ -1,3 +1,9 @@
+#!/usr/bin/python3
+
+# Script : OpsChallenge06.py
+# Purpose: Prompts the user to select an option for encryption or decryption
+# Why    : Improves efficiency to encrypt or decrypt files/directories
+
 from cryptography.fernet import Fernet
 import os
 
