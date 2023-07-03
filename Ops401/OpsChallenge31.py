@@ -1,5 +1,9 @@
 #!/usr/bin/python3
 
+# Script : OpsChallenge31.py - Signature-based Malware Detection Part 1 of 3
+# Purpose: The purpose of this script is to search for a specific file in a specified directory and its subdirectories
+# Why    : This script can be useful for quickly locating a specific file in a large directory and its subdirectories. 
+
 import os # Import the OS system library
 import glob # Import the glob library for file pattern matching
 
